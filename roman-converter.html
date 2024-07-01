@@ -8,6 +8,28 @@
     <link rel="stylesheet" href="https://use.typekit.net/rzz6mor.css" />
   </head>
   <body>
+    <main>
+      <h1>Welcome to the Roman Numeral Converter!</h1>
+      <h2>
+        Ever wonder what a random number looks like as a bunch of letters? Find
+        out here.
+      </h2>
+      <form id="converter" class="converter">
+        <fieldset>
+          <h4>Put your number here. Any number.</h4>
+          <h5>(Don't worry--if it's your age we won't tell anyone)</h5>
+          <label for="number">Number goes here:</label>
+          <input
+            type="number"
+            id="number"
+            placeholder="e.g. 8675309"
+            required
+          />
+          <button type="button" id="convert-btn">Convert those digits!</button>
+        </fieldset>
+      </form>
+      <div id="output" class="converted"></div>
+    </main>
     <script src="roman-converter.js"></script>
   </body>
 </html>
